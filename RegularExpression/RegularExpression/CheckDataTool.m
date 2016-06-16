@@ -32,7 +32,7 @@
 #pragma mark - 身份证号验证
 + (BOOL) checkForIdCard:(NSString *)idCard{
     
-    NSString *regEx = @"\\d{14}[[0-9],0-9xX]";
+    NSString *regEx = @"(^[0-9]{15}$)|([0-9]{17}([0-9]|X)$)";
     return [self baseCheckForRegEx:regEx data:idCard];
 }
 #pragma mark - 密码校验

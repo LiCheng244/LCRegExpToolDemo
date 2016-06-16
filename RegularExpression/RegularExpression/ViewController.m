@@ -18,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    /**
+     *  ----------使用方法----------
+     */
+    
     // 邮箱
     BOOL email = [CheckDataTool checkForEmail:@"licheng244344094@163.com"];
     NSLog(@"邮箱:%@", email?@"YES":@"NO");
@@ -57,7 +62,6 @@
     // 字母
     BOOL baseCase = [CheckDataTool checkForLowerAndUpperCase:@"ADASasas"];
     NSLog(@"小写字母:%@", baseCase?@"YES":@"NO");
-
     
     // 等等........
 
