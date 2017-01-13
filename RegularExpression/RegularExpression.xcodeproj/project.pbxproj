@@ -15,7 +15,7 @@
 		5A21AE201D0D53A800618759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A21AE1E1D0D53A800618759 /* LaunchScreen.storyboard */; };
 		5A21AE2B1D0D53A800618759 /* RegularExpressionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A21AE2A1D0D53A800618759 /* RegularExpressionTests.m */; };
 		5A21AE361D0D53A800618759 /* RegularExpressionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A21AE351D0D53A800618759 /* RegularExpressionUITests.m */; };
-		5A21AE451D0D53EE00618759 /* CheckDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A21AE441D0D53EE00618759 /* CheckDataTool.m */; };
+		5A8F29F81E28AE0800B31238 /* LCRegExpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F29F71E28AE0800B31238 /* LCRegExpTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		5A21AE311D0D53A800618759 /* RegularExpressionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegularExpressionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A21AE351D0D53A800618759 /* RegularExpressionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegularExpressionUITests.m; sourceTree = "<group>"; };
 		5A21AE371D0D53A800618759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A21AE431D0D53EE00618759 /* CheckDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckDataTool.h; sourceTree = "<group>"; };
-		5A21AE441D0D53EE00618759 /* CheckDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckDataTool.m; sourceTree = "<group>"; };
+		5A8F29F61E28AE0800B31238 /* LCRegExpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRegExpTool.h; sourceTree = "<group>"; };
+		5A8F29F71E28AE0800B31238 /* LCRegExpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRegExpTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +104,7 @@
 		5A21AE0F1D0D53A800618759 /* RegularExpression */ = {
 			isa = PBXGroup;
 			children = (
+				5A8F29F51E28ADF200B31238 /* LCRegExpTool */,
 				5A21AE131D0D53A800618759 /* AppDelegate.h */,
 				5A21AE141D0D53A800618759 /* AppDelegate.m */,
 				5A21AE161D0D53A800618759 /* ViewController.h */,
@@ -113,8 +114,6 @@
 				5A21AE1E1D0D53A800618759 /* LaunchScreen.storyboard */,
 				5A21AE211D0D53A800618759 /* Info.plist */,
 				5A21AE101D0D53A800618759 /* Supporting Files */,
-				5A21AE431D0D53EE00618759 /* CheckDataTool.h */,
-				5A21AE441D0D53EE00618759 /* CheckDataTool.m */,
 			);
 			path = RegularExpression;
 			sourceTree = "<group>";
@@ -143,6 +142,15 @@
 				5A21AE371D0D53A800618759 /* Info.plist */,
 			);
 			path = RegularExpressionUITests;
+			sourceTree = "<group>";
+		};
+		5A8F29F51E28ADF200B31238 /* LCRegExpTool */ = {
+			isa = PBXGroup;
+			children = (
+				5A8F29F61E28AE0800B31238 /* LCRegExpTool.h */,
+				5A8F29F71E28AE0800B31238 /* LCRegExpTool.m */,
+			);
+			path = LCRegExpTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A21AE451D0D53EE00618759 /* CheckDataTool.m in Sources */,
+				5A8F29F81E28AE0800B31238 /* LCRegExpTool.m in Sources */,
 				5A21AE181D0D53A800618759 /* ViewController.m in Sources */,
 				5A21AE151D0D53A800618759 /* AppDelegate.m in Sources */,
 				5A21AE121D0D53A800618759 /* main.m in Sources */,
@@ -502,6 +510,7 @@
 				5A21AE3C1D0D53A800618759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A21AE3D1D0D53A800618759 /* Build configuration list for PBXNativeTarget "RegularExpressionTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +519,7 @@
 				5A21AE3F1D0D53A800618759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A21AE401D0D53A800618759 /* Build configuration list for PBXNativeTarget "RegularExpressionUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +528,7 @@
 				5A21AE421D0D53A800618759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
